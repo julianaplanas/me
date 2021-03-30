@@ -28,13 +28,13 @@
 <body>
     <section id="main-menu-box">
         <article class="columns">
-            <div class="column is-12 menu-box" id="menu-box">
+            <div class="column is-12 menu-box is-fixed-top" id="menu-box">
                 <ul id="navbar-box">
-                    <li class="is-size-1-mobile menu about-nav">ABOUT</li>
-                    <li class="is-size-1-mobile menu projects-nav">PROJECTS</li>
-                    <li class="is-size-1-mobile menu events-nav">EVENTS</li>
-                    <li class="is-size-1-mobile menu publications-nav">PUBLICATIONS</li>
-                    <li class="is-size-1-mobile menu contact-nav">CONTACT</li>
+                    <li class="menu about-nav">ABOUT</li>
+                    <li class="menu projects-nav">PROJECTS</li>
+                    <li class="menu events-nav">EVENTS</li>
+                    <li class="menu publications-nav">PUBLICATIONS</li>
+                    <li class="menu contact-nav">CONTACT</li>
                 </ul>
             </div>
         </article>
@@ -42,6 +42,39 @@
             <a href="#">Linkedin</a>
             <a href="#">Github</a>
         </article>
+    </section>
+    <section id="burger-menu-box">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a class="navbar-item" id="about-burger-nav">
+                  ABOUT
+                </a>
+          
+                <a class="navbar-item" id="projects-burger-nav">
+                  PROJECTS
+                </a>
+
+                <a class="navbar-item" id="events-burger-nav">
+                    EVENTS
+                </a>
+
+                <a class="navbar-item" id="publications-burger-nav">
+                    PUBLICATIONS
+                </a>
+
+                <a class="navbar-item" id="contact-burger-nav">
+                    CONTACT
+                </a>
+              </div>
+          </nav>
     </section>
 
     <section id="about-box">
@@ -54,7 +87,51 @@
     </section>
 
     <section id="events-box">
-        <h1>Events</h1>
+        <div class="box sepicall-box">
+            <div class="columns">
+                <div class="column is-8">
+                    <video controls loop>
+                        <source src="img/sepicall2.mov" type="video/mp4">
+                    </video>
+                </div>
+                <div class="column is-4">
+                    <h1 class="events-titles">Sepicall</h1>
+                    <strong>Co-creadora, productora, manejo de redes y moderación durante la fiesta</strong>
+                    <p class="events-p">Durante el 2020, Sepicall funcionó como una comunidad virtual que buscaba ofrecer una plataforma de difusión para diverses artistas, DJs y productores emergentes que, en el contexto del distanciamiento social preventivo y obligatorio, vieron mermadas sus fuentes de ingreso. Además, ofreció entretenimiento en un espacio de disfrute, baile y socialización para todas las personas, en un contexto que impide disfrutar del espacio público para socializar.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="box altapaja-box">
+            <div class="columns">
+                <div class="column is-4">
+                    <h1 class="events-titles">Alta Paja</h1>
+                    <strong>Co-creadora, productora, manejo de redes y gestión de artistas</strong>
+                    <p class="events-p">Comenzó en el 2017 y se desarrolló hasta el 2019. Un espectáculo que tuvo como foco principal la poesía contemporánea, pero que conjugaba otras disciplinas como la música, las escénicas y las visuales con intenciones de visibilizar en igual medida la sensualidad artística y la diversidad sexual. 
+                    </p>
+                </div>
+                <div class="column is-8">
+                    <figure>
+                        <img src="img/altapaja2.jpg" alt="Alta paja" class="event-image">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="box todxslxschicxs-box">
+            <div class="columns">
+                <div class="column is-8">
+                    <figure>
+                        <img src="img/todxslxschicxs.jpg" alt="Sepicall fest" class="event-image">
+                    </figure>
+                </div>
+                <div class="column is-4">
+                    <h1 class="events-titles">Todxs lxs chicxs</h1>
+                    <strong>Creadora, productora y manejo de redes.</strong>
+                    <p class="events-p">Durante el 2017, Todxs lxs chicxs fue un colectivo cultural que integró diversxs artistas, poetas, músicxs, ilustradorxs, diseñadorxs, fotógrfxs, actores y todxs aquellxs interesadxs en el arte y que quisieran difundir su trabajo. Se organizó un espectáculo poético y performático en el Centro Cultural Recoleta a partir de una convocatoria de RADAR, donde también se editaron cuatro plaquetas que incluyeron a 20 poetas sub25 elegidos a partir de una convocatoria abierta. Además, se armaron otros eventos, ferias y micrófonos abiertos en diferentes centros culturales a fin de dar un espacio a nuevas y jóvenes voces. 
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="publications-box">
