@@ -1,0 +1,38 @@
+/* Main menu */
+.menu-box{
+    display: flex;
+}
+
+.menu{
+    color: #4C586B;
+    font-size: 11rem;
+    margin-left: 30px;
+    font-family: 'Comfortaa', cursive;
+    cursor: pointer;
+}
+
+.menu:hover{
+    color: #9ACFDD;
+}
+
+#about-box, #projects-box, #events-box, #publications-box, #contact-box{
+    display: none;
+}
+
+/* Contact footer */
+.contact-footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-footer a{
+    text-decoration: none;
+    color: #9ACFDD;
+    text-align: right;
+}
+
+.contact-footer a:hover{
+    color: #4C586B;
+}
