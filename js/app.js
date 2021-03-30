@@ -14,9 +14,15 @@ const publicationsBox = document.getElementById('publications-box');
 const contactBox = document.getElementById('contact-box');
 const projectsBox = document.getElementById('projects-box');
 
+// Burger nav
+const aboutBurgerNav = document.getElementById('about-burger-nav');
+const projectsBurgerNav = document.getElementById('projects-burger-nav');
+const eventsBurgerNav = document.getElementById('events-burger-nav');
+const publicationsBurgerNav = document.getElementById('publications-burger-nav');
+const contactBurgerNav = document.getElementById('contact-burger-nav');
+
 about.addEventListener('click', ()=>{
     navbarDisplay()
-    // mainMenuBox.style.display = 'none';
     aboutBox.style.display = 'block';
     eventsBox.style.display = 'none';
     publicationsBox.style.display = 'none';
@@ -26,7 +32,6 @@ about.addEventListener('click', ()=>{
 
 projects.addEventListener('click', () =>{
     navbarDisplay()
-    // mainMenuBox.style.display = 'none';
     aboutBox.style.display = 'none';
     eventsBox.style.display = 'none';
     publicationsBox.style.display = 'none';
@@ -36,7 +41,6 @@ projects.addEventListener('click', () =>{
 
 events.addEventListener('click', () =>{
     navbarDisplay()
-    // mainMenuBox.style.display = 'none';
     aboutBox.style.display = 'none';
     eventsBox.style.display = 'block';
     publicationsBox.style.display = 'none';
@@ -46,7 +50,6 @@ events.addEventListener('click', () =>{
 
 publications.addEventListener('click', () =>{
     navbarDisplay()
-    // mainMenuBox.style.display = 'none';
     aboutBox.style.display = 'none';
     eventsBox.style.display = 'none';
     publicationsBox.style.display = 'block';
@@ -56,7 +59,6 @@ publications.addEventListener('click', () =>{
 
 contact.addEventListener('click', () =>{
     navbarDisplay()
-    // mainMenuBox.style.display = 'none';
     aboutBox.style.display = 'none';
     eventsBox.style.display = 'none';
     publicationsBox.style.display = 'none';
@@ -68,22 +70,76 @@ contact.addEventListener('click', () =>{
 
 const menuBox = document.getElementById('menu-box');
 const contactFooter = document.getElementById('contactFooter')
+const burgerMenuBox = document.getElementById('burger-menu-box')
 
-const navbarDisplay = () =>{
-    menuBox.classList.remove('column')
-    menuBox.classList.remove('is-12');
-    menuBox.classList.add('navbar');
-    navbar.classList.add('navbar-menu')
-    navbar.classList.add('navbar-start')
-    about.classList.add('navbar-item');
-    projects.classList.add('navbar-item');
-    events.classList.add('navbar-item');
-    publications.classList.add('navbar-item');
-    contact.classList.add('navbar-item');
-    about.style.fontSize = '1rem';
-    projects.style.fontSize = '1rem';
-    events.style.fontSize = '1rem';
-    publications.style.fontSize = '1rem';
-    contact.style.fontSize = '1rem';
+const navbarDisplay = ()=>{
     contactFooter.style.display = 'none';
+    mainMenuBox.style.display = 'none'
+    burgerMenuBox.style.display = 'block'
 }
+
+aboutBurgerNav.addEventListener('click', ()=>{
+    aboutBox.style.display = 'block';
+    eventsBox.style.display = 'none';
+    publicationsBox.style.display = 'none';
+    contactBox.style.display = 'none';
+    projectsBox.style.display = 'none';
+})
+
+projectsBurgerNav.addEventListener('click', () =>{
+    aboutBox.style.display = 'none';
+    eventsBox.style.display = 'none';
+    publicationsBox.style.display = 'none';
+    contactBox.style.display = 'none';
+    projectsBox.style.display = 'block';
+})
+
+eventsBurgerNav.addEventListener('click', () =>{
+    aboutBox.style.display = 'none';
+    eventsBox.style.display = 'block';
+    publicationsBox.style.display = 'none';
+    contactBox.style.display = 'none';
+    projectsBox.style.display = 'none';
+})
+
+publicationsBurgerNav.addEventListener('click', () =>{
+    aboutBox.style.display = 'none';
+    eventsBox.style.display = 'none';
+    publicationsBox.style.display = 'block';
+    contactBox.style.display = 'none';
+    projectsBox.style.display = 'none';
+})
+
+contactBurgerNav.addEventListener('click', () =>{
+    aboutBox.style.display = 'none';
+    eventsBox.style.display = 'none';
+    publicationsBox.style.display = 'none';
+    contactBox.style.display = 'block';
+    projectsBox.style.display = 'none';
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+  
+      // Add a click event on each of them
+      $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+  
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+  
+});
