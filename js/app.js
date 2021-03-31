@@ -141,5 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     }
-  
 });
+
+// Contact
+const gmailLink = document.getElementById('gmail-link')
+const gmail = document.getElementById('gmail');
+
+gmailLink.addEventListener('click', ()=>{
+    gmail.style.display = 'block';
+})
