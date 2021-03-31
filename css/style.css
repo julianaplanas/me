@@ -221,3 +221,24 @@
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
+/* Projects */
+
+.project-link{
+    color: #9ACFDD;
+}
+
+.project-link:hover{
+    color: #4C586B;
+}
+
+.name-title{
+    font-size: 7rem;
+    color: #9ACFDD;
+    font-family: 'Indie Flower', cursive;
+}
+
+.about-subtitle{
+    font-weight: 800;
+    margin-bottom: 10px;
+}
