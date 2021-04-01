@@ -27,36 +27,6 @@
     display: none;
 }
 
-@media(min-width: 450px){
-    .menu{
-        font-size: 4.5rem;
-    }
-}
-
-@media(min-width: 700px){
-    .menu{
-        font-size: 5.5rem;
-    }
-}
-
-@media(min-width: 900px){
-    .menu{
-        font-size: 6.5rem;
-    }
-}
-
-@media(min-width: 1100px){
-    .menu{
-        font-size: 7.5rem;
-    }
-}
-
-@media(min-width: 1300px){
-    .menu{
-        font-size: 11rem;
-    }
-}
-
 #burger-menu-box{
     display: none;
 }
@@ -214,12 +184,8 @@
 }
 
 #gmail{
-    margin-top: 30px;
+    margin-top: 15px;
     display: none;
-    -moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
 }
 
 /* Projects */
@@ -233,12 +199,56 @@
 }
 
 .name-title{
-    font-size: 7rem;
+    font-size: 2rem;
     color: #9ACFDD;
-    font-family: 'Indie Flower', cursive;
 }
 
 .about-subtitle{
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#about-box{
+    padding-left: 30px;
+}
+
+
+
+/* Responsive */
+
+@media(min-width: 450px){
+    .menu{
+        font-size: 4.5rem;
+    }
+}
+
+@media(min-width: 700px){
+    .menu{
+        font-size: 5.5rem;
+    }
+}
+
+@media(min-width: 900px){
+    .menu{
+        font-size: 6.5rem;
+    }
+    .name-title{
+        font-size: 3rem;
+    }
+    #about-box{
+        padding-left: 0;
+    }
+}
+
+@media(min-width: 1100px){
+    .menu{
+        font-size: 7.5rem;
+    }
+}
+
+@media(min-width: 1300px){
+    .menu{
+        font-size: 11rem;
+    }
 }
