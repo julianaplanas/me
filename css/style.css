@@ -203,11 +203,11 @@
     margin-bottom: 5px;
 }
 
-.contact-items a{
+.contact-items a, .about-subtitle a{
     color: #9ACFDD;
 }
 
-.contact-items a:hover{
+.contact-items a:hover, .about-subtitle a:hover{
     color: #4C586B;
 }
 
