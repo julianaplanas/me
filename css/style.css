@@ -11,13 +11,19 @@
 
 .menu-box{
     display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .menu{
     color: #4C586B;
-    font-size: 2.5rem;
-    margin-left: 30px;
+    font-size: 2.9rem;
     cursor: pointer;
+    border-bottom: 3px solid #9ACFDD;
+}
+
+.contact-nav{
+    border-bottom: none;
 }
 
 .menu:hover{
@@ -58,6 +64,14 @@
     color: #4C586B;
 }
 
+/* //// */
+
+.section-title{
+    color: #4C586B;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
 /* ABOUT */
 
 .name-title{
@@ -73,6 +87,19 @@
 
 #about-box{
     padding-left: 30px;
+}
+
+.border-bottom{
+    padding-bottom: 40px;
+    border-bottom: 3px solid #9ACFDD;
+}
+
+.about-list{
+    list-style-type: square;
+}
+
+.about-list li{
+    margin-bottom: 3px;
 }
 
 /* PROJECTS */
@@ -103,6 +130,10 @@
 
 .events-p{
     font-size: 1rem;
+}
+
+.sepicall-box{
+    margin: 0 10px;
 }
 
 /* PUBLICATIONS */
@@ -203,11 +234,11 @@
     margin-bottom: 5px;
 }
 
-.contact-items a, .about-subtitle a{
+.contact-items a, .about-subtitle a, .about-list a{
     color: #9ACFDD;
 }
 
-.contact-items a:hover, .about-subtitle a:hover{
+.contact-items a:hover, .about-subtitle a:hover, .about-list a:hover{
     color: #4C586B;
 }
 
