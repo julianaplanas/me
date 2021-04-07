@@ -143,6 +143,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Publications
+
+const imageTYL = document.getElementById('image-tyl');
+const textTYL = document.getElementById('text-tyj');
+const imageMM = document.getElementById('image-mm');
+const textMM = document.getElementById('text-mm');
+
+imageTYL.addEventListener('click', () =>{
+    textTYL.style.display = 'block';
+})
+
+imageMM.addEventListener('click', ()=>{
+    textMM.style.display = 'block';
+})
+
 // Contact
 const gmailLink = document.getElementById('gmail-link')
 const gmail = document.getElementById('gmail');
