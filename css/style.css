@@ -138,6 +138,10 @@
 
 /* PUBLICATIONS */
 
+.columns + .columns {
+    flex-direction: column;
+}
+
 .publi-image img{
     width: 100%;
 }
@@ -277,15 +281,3 @@
         padding-left: 0;
     }
 }
-
-/* @media(min-width: 1100px){
-    .menu{
-        font-size: 7.5rem;
-    }
-}
-
-@media(min-width: 1300px){
-    .menu{
-        font-size: 11rem;
-    }
-} */
